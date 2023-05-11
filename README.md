@@ -1,5 +1,4 @@
 0x00. AirBnB clone - The console
-
 0x00.Table of contents
 
     0x01 Introduction
@@ -225,4 +224,3 @@ git shortlog -se
 | sed -e '/^CommitSyncScript.*$/d' \
 
     AUTHORS
-
