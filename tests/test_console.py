@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """Defines unittests for console.py.
+
 Unittest classes:
     TestHBNBCommand_prompting
     TestHBNBCommand_help
@@ -196,8 +197,9 @@ class TestHBNBCommand_create(unittest.TestCase):
             self.assertLess(0, len(output.getvalue().strip()))
             testKey = "Review.{}".format(output.getvalue().strip())
             self.assertIn(testKey, storage.all().keys())
-            
-            class TestHBNBCommand_show(unittest.TestCase):
+
+
+class TestHBNBCommand_show(unittest.TestCase):
     """Unittests for testing show from the HBNB command interpreter"""
 
     @classmethod
@@ -449,7 +451,8 @@ class TestHBNBCommand_create(unittest.TestCase):
             self.assertFalse(HBNBCommand().onecmd(command))
             self.assertEqual(obj.__str__(), output.getvalue().strip())
 
-            class TestHBNBCommand_destroy(unittest.TestCase):
+
+class TestHBNBCommand_destroy(unittest.TestCase):
     """Unittests for testing destroy from the HBNB command interpreter."""
 
     @classmethod
@@ -809,8 +812,8 @@ class TestHBNBCommand_all(unittest.TestCase):
             self.assertFalse(HBNBCommand().onecmd("all Review"))
             self.assertIn("Review", output.getvalue().strip())
             self.assertNotIn("BaseModel", output.getvalue().strip())
-            
-            def test_all_single_object_dot_notation(self):
+
+    def test_all_single_object_dot_notation(self):
         with patch("sys.stdout", new=StringIO()) as output:
             self.assertFalse(HBNBCommand().onecmd("create BaseModel"))
             self.assertFalse(HBNBCommand().onecmd("create User"))
@@ -1126,8 +1129,8 @@ class TestHBNBCommand_update(unittest.TestCase):
             testCmd = "update Review {} attr_name".format(testId)
             self.assertFalse(HBNBCommand().onecmd(testCmd))
             self.assertEqual(correct, output.getvalue().strip())
-            
-            def test_update_missing_attr_value_dot_notation(self):
+
+    def test_update_missing_attr_value_dot_notation(self):
         correct = "** value missing **"
         with patch("sys.stdout", new=StringIO()) as output:
             HBNBCommand().onecmd("create BaseModel")
@@ -1565,5 +1568,3 @@ class TestHBNBCommand_count(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-            
-            
