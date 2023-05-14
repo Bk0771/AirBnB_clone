@@ -205,13 +205,13 @@ e952b772-80a5-41e9-b728-6bc4dc5c21b4
 
 ## Authors
 <details>
-    <summary>Godswill Kalu</summary>
-    <summary>TIESSIA BOLA</summary>
+    <summary>biruk hailemariam</summary>
+    <summary>seleshi geberesellassie</summary>
     <ul>
-    <li><a href="https://www.github.com/lordwill">Github</a></li>
-    <li><a href="mailto:messagelordwill@gmail.com">e-mail</a></li>
-    <li><a href="https://www.github.com/Adamsbola">Github</a></li>
-    <li><a href="mailto:adamadu52@gmail.com">e-mail</a></li>
+    <li><a href="https://www.github.com/Bk0771">Github</a></li>
+    <li><a href="mailto:messagebhailmariam@gmail.com">e-mail</a></li>
+    <li><a href="https://www.github.com/selesh27">Github</a></li>
+    <li><a href="mailto:seleshi9760@gmail.com">e-mail</a></li>
     </ul>
 </details>
 
